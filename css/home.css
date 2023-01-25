@@ -1,0 +1,208 @@
+:root {
+    --grey: #1f1f25;
+    --text: #414145;
+    --section: #131b21;
+    --alt-text: #7f50ff;
+    --card-color: #5865f2
+}
+html {
+    background-color: var(--section) !important;
+}
+* {
+    margin: 0;
+    padding: 0 ;
+    font-weight: 200;
+}
+.text-light {
+    text-decoration: none;
+    margin-left: 4px;
+}
+body {
+    overflow-x: hidden;
+    background-color: var(--section);
+    height: 100vh;
+}
+.gray {
+    color: var(--text) !important;
+}
+.cutom-edit {
+    color: #818286 !important;
+}
+img {
+    display: inline;
+}
+.header {
+    background-color: var(--grey);
+    height: 53.19px;
+}
+.p-max {
+    padding: 45vh;
+}
+.ms-10 {
+    margin-left: 150px;
+}
+.icon {
+    margin-left: 6px;
+}
+main {
+    width: 110%;
+    height: 60vh;
+    background-color: var(--section);
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+main .join-b {
+ background-color: #7f50ff;
+}
+main .btn {
+ height: 58px;
+}
+main .login {
+    background-color: var(--section);
+    border: 5px solid #1e2d39;
+    width: 105px;
+}
+.section-1 {
+    padding-top: 200px;
+    background-color: var(--section);
+    color: white;
+    width: 100%;
+    height: max-content;
+}
+.section-1 .containere {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section-1 .containere .colm-1 p{
+  width: 288px;
+}
+.section-1 .containere .colm-1 h3{
+    color: var(--alt-text);
+    padding-bottom: 7px;
+}
+.colm-2,
+.colm-3 {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+}
+.section-2 {
+    background-color: var(--section);
+    height: max-content;
+    color: white;
+    width: 100%;
+}
+.section-2 .card-container {
+    display: flex;
+    width: 765px;
+    height: 220px;
+    background-color: var(--card-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+.section-2 .flex-row-reverse {
+    padding: 0 50px !important;
+}
+.section-2 .card-container .title {
+    display: block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.section-2 .card-container .desc {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+}
+.section-2 .card-container .card-img  {
+    border-radius: 10px;
+    width: 35%;
+    perspective: 484px;
+    transform: scale(1) perspective(1000px) rotateX(23deg) rotateY(23deg) rotate(-9.8deg) translateX(-15px);
+    transition: all .2s ease-out;
+}
+.section-2 .card-container .card-img:hover {
+ transform: none;
+}
+.section-2.end {
+    display: block;
+}
+.section-3 {
+    background-color: var(--section);
+    height: max-content;
+    color: white;
+    width: 100%;
+    margin-top: 100px;
+}
+.section-3 .containere{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section-3 .containere .row-1 .text-join {
+    font-weight: 600;
+    font-size: 45px;
+}
+.section-3 .containere .row-1 .text-community {
+    font-weight: 400;
+    font-size: 40px;
+}
+.section-3 .containere .row-1 .text-custom {
+    font-size: 35px;
+    font-weight: 400;
+}
+.section-3 .containere .row-1 .text-custom-footer {
+    color: var(--alt-text);
+    padding-bottom: 40px;
+}
+.section-3 .containere .row-2 .join-b {
+    background-color: #7f50ff;
+}
+.section-3 .containere .row-2 i {
+    color: var(--alt-text);
+}
+.section-3 .containere .row-2 img {
+    position: relative;
+    transform: scale(1) perspective(1000px) rotateX(23deg) rotateY(23deg) rotate(-9.8deg) translateX(-50px);
+    animation: up-and-down 5s linear infinite;
+}
+footer {
+    height: 300px;
+    margin: -150px -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    background-image: url("https://probot.io/static/footer.webp");
+    margin-top: 50px;
+    color: white;
+}
+footer div {
+    margin: 0 50px
+}
+footer a {
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+@keyframes up-and-down {
+    0%,
+    100% {
+      top: 0;
+    }
+    50% {
+      top: -50px;
+    }
+}
